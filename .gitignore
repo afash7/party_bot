@@ -5,3 +5,4 @@ users.db
 token.txt
 id.txt
 .env
+config.py

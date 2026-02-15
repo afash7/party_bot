@@ -1,3 +1,4 @@
+from config import TOKEN, ADMIN_ID
 import sqlite3
 import logging
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
@@ -11,11 +12,15 @@ from telegram.ext import (
     CallbackQueryHandler
 )
 
-TOKEN = "8552517292:AAHBCL9jJZAcUDqfC90aSdybzMWkb-fZ42k"
-ADMIN_ID = 247133452  # my id
+# TOKEN = ("TOKEN")
+# ADMIN_ID = ("ADMIN_ID")
 SECRET_CODE = "to the end of darkness"
 CARD_NUMBER = "6037998291886488"
-AMOUNT = "مبلغ ۲ میلیون تومان برای هر نفر یا اگر زوج هستید مبلغ یک میلیون و پانصد هزار برای هر زوج"
+AMOUNT = "دو میلیون تومان برای هر نفر یا سه میلیون تومان برای زوج"
+
+if not TOKEN or not ADMIN_ID:
+    raise ValueError("TOKEN or ADMIN_ID is not set in environment variables!")
+
 
 ASK_CODE, ASK_NAME, ASK_PAYMENT_ID, ASK_SCREENSHOT = range(4)
 
