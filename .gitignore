@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+users.db
+token.txt
+id.txt
+.env
