@@ -101,7 +101,7 @@ async def save_screenshot(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-    await update.message.reply_text("درخواست شما ثبت شد. منتظر تایید ادمین باشید.")
+    await update.message.reply_text("درخواست شما ثبت شد. منتظر تایید ادمین باشید مدتی بعد از تأیید برات لوکیشنو میفرستم قشنگم")
     return ConversationHandler.END
 
 async def handle_admin(update: Update, context: ContextTypes.DEFAULT_TYPE):
