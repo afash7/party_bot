@@ -16,7 +16,7 @@ from telegram.ext import (
 # ADMIN_ID = ("ADMIN_ID")
 SECRET_CODE = "to the end of darkness"
 CARD_NUMBER = "6037998291886488"
-AMOUNT = "دو میلیون تومان برای هر نفر یا سه میلیون تومان برای زوج"
+AMOUNT = "دویست هزار تومان برای هر نفر یا سیصد هزار تومان برای زوج"
 
 if not TOKEN or not ADMIN_ID:
     raise ValueError("TOKEN or ADMIN_ID is not set in environment variables!")
